@@ -36,7 +36,7 @@ This tool is strictly for **offline exploration and visualization** of EVM behav
 ## 🛠 Tech Stack
 
 - **Framework**: Vue 3 + Vite
-- **Language**: TypeScript
+- **Language**: TypeScript,java
 - **UI**: Tailwind CSS
 - **Tooling**: PNPM, EVM bytecode interpreter
 
