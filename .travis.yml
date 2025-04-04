@@ -1,0 +1,24 @@
+language: java
+
+matrix:
+  include:
+    # Code style and license header check
+    - env: NAME="Code style and license header check"
+      os: linux
+      sudo: false
+      jdk: openjdk11
+      script:
+        - mvn license:check
+        - mvn formatter:validate
+
+    # Linux tests (Java 11)
+    - env: NAME="Linux tests (Java 11)"
+      os: linux
+      sudo: false
+      jdk: openjdk11
+      script:
+        - mvn test
+
+cache:
+  directories:
+    - $HOME/.m2
