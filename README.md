@@ -1,45 +1,55 @@
-# EVM in Java
+# EVM Insight
 
-[![Build Status](https://travis-ci.com/semuxproject/evm.svg?branch=master)](https://travis-ci.com/semuxproject/evm)
+**EVM Insight** is an advanced and interactive reference tool that helps developers, auditors, and blockchain enthusiasts explore the inner workings of the Ethereum Virtual Machine (EVM). Built as a modern, developer-friendly extension of , EVM Insight provides in-depth opcode analysis, contract disassembly, and educational tools for understanding low-level Ethereum logic.
 
-EVM in Java is a standalone EVM implementation, derived from the EthereumJ project.
+---
 
-It's light-weight and can be easily integrated into other projects.
+## 🔍 Features
 
-## How to use it?
+- 🧠 **Comprehensive EVM Opcode Reference**
+  - Stack behavior, gas cost, and descriptions
+  - Real-time example simulations
+- 🔬 **Bytecode Disassembler**
+  - Paste smart contract bytecode and visualize EVM instructions
+- 🧪 **Interactive EVM Playground**
+  - Simulate and step through execution of raw bytecode
+- 📊 **Instruction Metadata**
+  - Includes historical changes (e.g., hardfork gas adjustments)
+- 🎓 **Educational Focus**
+  - Designed for smart contract learners, researchers, and auditors
 
-```
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
+---
 
-<dependency>
-    <groupId>com.github.semuxproject</groupId>
-    <artifactId>evm</artifactId>
-    <version>[GIT_COMMIT_HASH]</version>
-</dependency>
-```
+## 🚫 Not a Wallet
 
-## Build from source
+EVM Insight is **not a wallet** and does **not**:
+- Store private keys
+- Connect to any blockchain or Web3 providers
+- Interact with your MetaMask or other wallets
 
-```
-git clone https://github.com/semuxproject/evm
-cd evm
-mvn install
-```
+This tool is strictly for **offline exploration and visualization** of EVM behavior.
 
-
-## Code style
-
-To format the source code, run the following command:
-```
-mvn formatter:format license:format
-```
+---
 
 
-## License
 
-This projected is licensed under [LGPLv3](./LICENSE).
+## 🛠 Tech Stack
+
+- **Framework**: Vue 3 + Vite
+- **Language**: TypeScript
+- **UI**: Tailwind CSS
+- **Tooling**: PNPM, EVM bytecode interpreter
+
+---
+
+## 💻 Getting Started
+
+```bash
+# Clone the repository
+cd evm-insight
+
+# Install dependencies
+pnpm install
+
+# Start the development server
+pnpm dev
